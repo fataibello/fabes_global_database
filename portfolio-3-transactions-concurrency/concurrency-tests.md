@@ -2,7 +2,7 @@
 
 ## 1. Objective
 
-The objective was to demonstrate transaction management and concurrency control in PostgreSQL using the FABES e-commerce database.
+The objective was to demonstrate transaction management and concurrency control in PostgreSQL using the FABES Global database.
 
 ## 2. Transaction Rollback
 
@@ -30,4 +30,3 @@ This experiment demonstrated PostgreSQL row-level locking and the coordination o
 
 The practical exercises demonstrated the use of `COMMIT`, `ROLLBACK`, conditional updates, and row-level locking. These mechanisms help maintain data consistency when multiple operations modify inventory concurrently.
 
-The tests used a small sample database. Further testing with different transaction isolation levels, competing order requests, and more complex transaction failures could provide additional evidence of concurrency behaviour.
