@@ -39,3 +39,16 @@ SELECT
 FROM products
 WHERE product_id = 1;
 
+
+--Safe inventory update
+-- Reduce stock only when sufficient quantity is available
+
+BEGIN;
+
+UPDATE products
+SET stock_quantity = stock_quantity - 2
+WHERE product_id = 1
+  AND stock_quantity >= 2
+RETURNING product_id, product_name, stock_quantity;
+
+COMMIT;
