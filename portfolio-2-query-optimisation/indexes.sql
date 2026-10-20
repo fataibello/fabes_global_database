@@ -31,3 +31,14 @@ WHERE schemaname = 'public'
       'idx_orders_order_date'
   )
 ORDER BY tablename, indexname;
+
+
+-- Composite index for customer order-history searches
+CREATE INDEX IF NOT EXISTS idx_orders_customer_date
+ON orders(customer_id, order_date);
+
+-- Verify that the composite index exists
+SELECT indexname, indexdef
+FROM pg_indexes
+WHERE schemaname = 'public'
+  AND indexname = 'idx_orders_customer_date';
