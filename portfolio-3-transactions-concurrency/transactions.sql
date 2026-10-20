@@ -52,3 +52,5 @@ WHERE product_id = 1
 RETURNING product_id, product_name, stock_quantity;
 
 COMMIT;
+
+
