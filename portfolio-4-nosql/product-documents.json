@@ -1,0 +1,81 @@
+
+[
+  {
+    "product_id": 1,
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 45000,
+    "currency": "NGN",
+    "stock_quantity": 23,
+    "brand": "FABES Audio",
+    "specifications": {
+      "connectivity": "Bluetooth",
+      "battery_life_hours": 30,
+      "noise_cancellation": true
+    },
+    "tags": ["wireless", "audio", "electronics"],
+    "active": true
+  },
+  {
+    "product_id": 2,
+    "name": "USB-C Charger",
+    "category": "Electronics",
+    "price": 12000,
+    "currency": "NGN",
+    "stock_quantity": 50,
+    "brand": "FABES",
+    "specifications": {
+      "connector": "USB-C",
+      "fast_charging": true
+    },
+    "tags": ["charger", "electronics"],
+    "active": true
+  },
+  {
+    "product_id": 3,
+    "name": "Classic T-Shirt",
+    "category": "Fashion",
+    "price": 8500,
+    "currency": "NGN",
+    "stock_quantity": 40,
+    "brand": "FABES Wear",
+    "specifications": {
+      "material": "Cotton",
+      "sizes": ["S", "M", "L", "XL"],
+      "colour": "Black"
+    },
+    "tags": ["clothing", "t-shirt", "fashion"],
+    "active": true
+  },
+  {
+    "product_id": 4,
+    "name": "Running Shoes",
+    "category": "Footwear",
+    "price": 32000,
+    "currency": "NGN",
+    "stock_quantity": 15,
+    "brand": "FABES Sport",
+    "specifications": {
+      "type": "Running",
+      "sizes": [40, 41, 42, 43, 44],
+      "upper_material": "Mesh"
+    },
+    "tags": ["shoes", "sports", "running"],
+    "active": true
+  },
+  {
+    "product_id": 5,
+    "name": "Table Lamp",
+    "category": "Home",
+    "price": 18000,
+    "currency": "NGN",
+    "stock_quantity": 20,
+    "brand": "FABES Home",
+    "specifications": {
+      "light_type": "LED",
+      "adjustable": true
+    },
+    "tags": ["lighting", "home"],
+    "active": true
+  }
+]
