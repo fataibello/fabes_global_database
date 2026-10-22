@@ -1,5 +1,5 @@
 
-# FABES Distributed Database Architecture
+# FABES GLOBAL Distributed Database Architecture
 
 **Status:** Proposed architecture. PostgreSQL and MongoDB have been implemented locally; replication, sharding, and automated backup infrastructure have not been deployed.
 
@@ -22,7 +22,7 @@ flowchart TD
 
 ## Architecture Explanation
 
-- **FABES Application:** The proposed application layer through which customers and staff access the system.
+- **FABES GLOBAL Application:** The proposed application layer through which customers and staff access the system.
 - **PostgreSQL Primary:** Stores relational data, including customers, orders, order items, payments, and deliveries.
 - **MongoDB Products:** Stores flexible product catalogue documents and product attributes.
 - **PostgreSQL Standby Replica:** A proposed secondary database to support availability and potentially serve read-only queries.
