@@ -5,7 +5,7 @@
 
 ```mermaid
 flowchart TD
-    U[Customers and Staff] --> A[FABES Application]
+    U[Customers and Staff] --> A[FABES GLOBAL Application]
 
     A -->|Customer, order and payment data| P[(PostgreSQL Primary)]
     A -->|Product catalogue| M[(MongoDB Products)]
