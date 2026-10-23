@@ -86,5 +86,3 @@ A graph database represents entities as nodes and connections as relationships. 
 ## 7. Conclusion
 
 A polyglot persistence approach allows FABES GLOBAL to choose a database model for each workload. MongoDB is a practical complement for flexible product documents. Redis, Cassandra, and Neo4j are potential options for specific workloads if the system's scale and features justify their additional complexity.
-
-The portfolio distinguishes between operations executed locally and conceptual examples. Claims about performance, scalability, or successful execution should be supported by measurements or implementation evidence rather than assumptions.
