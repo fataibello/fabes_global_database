@@ -3,7 +3,7 @@
 
 ### 1. Introduction
 
-FABES is a simulated e-commerce platform designed to manage customers, product listings, inventory, customer orders, payments and deliveries. The database is implemented using PostgreSQL 18 and administered through pgAdmin 4.
+FABES GLOBAL is a simulated e-commerce platform designed to manage customers, product listings, inventory, customer orders, payments and deliveries. The database is implemented using PostgreSQL 18 and administered through pgAdmin 4.
 
 The purpose of this project is to design and implement a relational database that maintains data integrity, minimises unnecessary duplication, supports transactional operations and enables meaningful business reporting.
 
@@ -28,13 +28,13 @@ The database is designed to support the following operations:
 
 **Addresses:** Stores customer delivery addresses. The customer foreign key links each address to its owner.
 
-**Categories:** Stores product category names, such as Electronics, Fashion and Home and Living.
+**Categories:** Stores product category names, such as Electronics, Fashion and Home.
 
 **Products:** Stores product details, prices, stock quantities and active status. Products can be associated with categories.
 
 **Product Attributes:** Stores additional product characteristics as name-value pairs, such as colour, material, size and connectivity.
 
-**Orders:** Records the customer placing an order, the selected delivery address, the order date and the order status.
+**Orders:** Records the customer order, the selected delivery address, the order date and the order status.
 
 **Order Items:** Records individual products within an order, including quantity and the unit price recorded for that order.
 
