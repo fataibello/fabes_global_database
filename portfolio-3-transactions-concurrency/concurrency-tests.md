@@ -2,7 +2,7 @@
 
 ## 1. Objective
 
-The objective was to demonstrate transaction management and concurrency control in PostgreSQL using the FABES Global database.
+The objective was to demonstrate transaction management and concurrency control in PostgreSQL using the FABES GLOBAL database.
 
 ## 2. Transaction Rollback
 
