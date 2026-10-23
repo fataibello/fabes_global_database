@@ -31,9 +31,9 @@ Replication is not a substitute for independent, tested backups.
 
 Sharding divides a dataset across multiple servers. Each shard stores a portion of the overall data.
 
-### Proposed FABES example
+### Proposed FABES GLOBAL example
 
-If FABES accumulates a very large volume of product-view events, those events could be partitioned by customer identifier or another suitable key.
+If FABES GLOBAL accumulates a very large volume of product-view events, those events could be partitioned by customer identifier or another suitable key.
 
 For example:
 
@@ -41,7 +41,7 @@ For example:
 - Shard B stores events for another range or group.
 - A routing mechanism directs each query to the relevant shard or shards.
 
-This is a conceptual design. It does not mean the current FABES database has been sharded.
+This is a conceptual design. It does not mean the current FABES GLOBAL database has been sharded.
 
 ### Choosing a shard key
 
@@ -64,7 +64,7 @@ Replication and sharding can be combined in larger systems.
 
 ## 4. Consistency Considerations
 
-For FABES, order and payment processing requires careful consistency controls.
+For FABES GLOBAL, order and payment processing requires careful consistency controls.
 
 - The application should use transactions for related changes within PostgreSQL.
 - Replicated read workloads must account for possible lag.
@@ -87,6 +87,4 @@ If sharding is deployed, evaluate data distribution, query routing, storage bala
 ## 6. Current Implementation Status
 
 The replication and sharding designs in this document are proposed architectural examples. A live replicated or sharded cluster has not been established as part of the current local implementation.
-
-Implementation claims should be updated only after the relevant configuration and tests have been performed.
 
