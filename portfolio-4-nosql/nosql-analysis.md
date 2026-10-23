@@ -41,10 +41,6 @@ A key-value database retrieves a value using a unique key, for example `cart:cus
 - Application logic may be needed to maintain consistency with product prices and stock in PostgreSQL.
 - Persistence and eviction settings must be chosen carefully.
 
-**Assessment:** Suitable for active shopping carts and sessions, but the authoritative order and payment records should remain in PostgreSQL.
-
-**Implementation status:** The Redis example is illustrative unless it has been executed in a Redis environment.
-
 ## 4. Column-Family Model: Apache Cassandra
 
 **Proposed use:** High-volume product-view and activity events.
@@ -61,10 +57,6 @@ Cassandra tables are designed around query patterns, partition keys, and cluster
 - Data duplication may be necessary for different queries.
 - It is not a direct replacement for relational joins or multi-table transactions.
 
-**Assessment:** Potentially useful for large-scale browsing analytics and activity logs. It may be unnecessary for a small FABES deployment.
-
-**Implementation status:** The Cassandra schema is illustrative unless it has been executed and tested in Cassandra.
-
 ## 5. Graph Model: Neo4j
 
 **Proposed use:** Product recommendations and relationship exploration.
@@ -80,10 +72,6 @@ A graph database represents entities as nodes and connections as relationships. 
 - Adds another database technology to operate and maintain.
 - Requires careful graph modelling and suitable query design.
 - Is not necessarily better than PostgreSQL for simple tabular queries.
-
-**Assessment:** Useful if FABES develops recommendation features or complex product discovery.
-
-**Implementation status:** The Neo4j examples are illustrative unless executed in a Neo4j environment.
 
 ## 6. Comparative Evaluation
 
