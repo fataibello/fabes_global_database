@@ -40,13 +40,13 @@ Value: {"product_id": 1, "quantity": 2}
 Illustrative CQL table:
 
 ```sql
-CREATE KEYSPACE fabes_analytics
+CREATE KEYSPACE fabes_global_analytics
 WITH replication = {
   'class': 'SimpleStrategy',
   'replication_factor': 1
 };
 
-CREATE TABLE fabes_analytics.product_views_by_customer (
+CREATE TABLE fabes_global_analytics.product_views_by_customer (
   customer_id int,
   viewed_at timestamp,
   product_id int,
