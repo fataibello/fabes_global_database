@@ -22,7 +22,7 @@ The PostgreSQL replica and backup storage are proposed architectural components.
 
 ## 3. Why Distribution Matters
 
-A distributed database architecture can help FABES to:
+A distributed database architecture can help FABES GLOBAL to:
 
 - Improve service availability when a database server fails.
 - Scale read workloads by directing suitable queries to replicas.
@@ -37,13 +37,12 @@ PostgreSQL remains the authoritative source for orders, payments, customer recor
 
 MongoDB provides a document-oriented representation of product information. If product information is duplicated between databases, the application must define which system owns each field and how updates are synchronised.
 
-The design should avoid treating two independent databases as if they automatically share a single transaction.
 
 ## 5. Availability and Recovery
 
 A PostgreSQL standby can reduce recovery time after primary-server failure, but replication alone is not a complete backup strategy. Accidental changes may also be replicated.
 
-FABES should use scheduled backups, protected backup storage, restore testing, monitoring, and a documented failover procedure.
+FABES GLOBAL should use scheduled backups, protected backup storage, restore testing, monitoring, and a documented failover procedure.
 
 ## 6. Security
 
@@ -53,7 +52,7 @@ Database servers should not be exposed publicly without suitable network restric
 
 ## 7. Conclusion
 
-A distributed architecture can help FABES grow beyond a single-server deployment. The appropriate design depends on traffic, availability requirements, data volume, and operational capacity. For a small deployment, a well-maintained PostgreSQL server, MongoDB for appropriate workloads, and tested backups may be more practical than introducing a complex distributed cluster immediately.
+A distributed architecture can help FABES GLOBAL grow beyond a single-server deployment. The appropriate design depends on traffic, availability requirements, data volume, and operational capacity. For a small deployment, a well-maintained PostgreSQL server, MongoDB for appropriate workloads, and tested backups may be more practical than introducing a complex distributed cluster immediately.
 
 This document describes a proposed architecture, not a claim that replicas or cloud infrastructure have already been deployed.
 
