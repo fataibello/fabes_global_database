@@ -28,4 +28,3 @@ Durability means committed changes persist beyond the completion of a transactio
 
 The practical tests demonstrated the main ACID concepts using PostgreSQL transactions and inventory updates. Together, these properties help protect the reliability and consistency of an e-commerce database.
 
-The tests were performed on a small sample dataset and demonstrate selected transaction behaviours rather than proving every aspect of ACID under all workloads.
