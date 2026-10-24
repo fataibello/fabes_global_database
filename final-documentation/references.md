@@ -23,7 +23,3 @@ Redis Ltd. (n.d.). *Redis Documentation: Data Types*. Available at: https://redi
 ## Use of References
 
 The PostgreSQL sources support the discussion of execution plans, query analysis, and concurrency control. The MongoDB sources support the explanation of document structure, CRUD operations, and data modelling. The Redis source supports the conceptual comparison of key-value and other data structures.
-
-These sources provide technical background; they do not imply that every database technology or distributed feature discussed in the portfolio was deployed.
-
-**Note:** Add any course materials, textbooks, lecture notes, or additional sources you actually consulted. Do not list sources as consulted if you did not use them. Follow your institution's required referencing style if it differs from this format.
