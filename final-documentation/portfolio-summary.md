@@ -8,7 +8,7 @@ The project uses PostgreSQL for relational data management and MongoDB for flexi
 
 ## 2. Portfolio 1: Database Design and Modelling
 
-This section covers the design and implementation of the FABES relational database in PostgreSQL.
+This section covers the design and implementation of the FABES GLOBAL relational database in PostgreSQL.
 
 The database includes tables for customers, addresses, categories, products, product attributes, orders, order items, payments, and deliveries. Primary keys, foreign keys, and constraints support data integrity.
 
@@ -16,7 +16,7 @@ Sample records were inserted to test the schema. An entity-relationship diagram 
 
 ## 3. Portfolio 2: Query Processing and Optimisation
 
-This section examines SQL queries and indexing strategies for the FABES database.
+This section examines SQL queries and indexing strategies for the FABES GLOBAL database.
 
 Indexes were created for important relationships and query fields, including customer IDs, order IDs, product IDs, order dates, and a composite customer-and-date index.
 
@@ -40,7 +40,7 @@ The portfolio also compares document, key-value, column-family, and graph data m
 
 ## 6. Portfolio 5: Distributed Databases and Cloud Architecture
 
-This section proposes a distributed database architecture for FABES, combining PostgreSQL for relational transactions and MongoDB for product catalogue data.
+This section proposes a distributed database architecture for FABES GLOBAL, combining PostgreSQL for relational transactions and MongoDB for product catalogue data.
 
 The documentation evaluates replication, sharding, consistency, availability, backups, monitoring, and recovery considerations.
 
